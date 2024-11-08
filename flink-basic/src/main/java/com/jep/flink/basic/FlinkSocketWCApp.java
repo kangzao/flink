@@ -29,7 +29,7 @@ public class FlinkSocketWCApp {
          */
         Configuration configuration = new Configuration();
         configuration.setInteger("rest.port", 8082);
-        StreamExecutionEnvironment env = StreamExecutionEnvironment.createLocalEnvironmentWithWebUI(configuration);
+        StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment(configuration);
 
         /**
          * 数据源：可以通过多种不同的数据源接入数据：socket  kafka  text
