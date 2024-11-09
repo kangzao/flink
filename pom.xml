@@ -11,6 +11,7 @@
     <url>http://maven.apache.org</url>
     <modules>
         <module>flink-basic</module>
+        <module>flink-datastream</module>
     </modules>
 
     <!--定义常用的软件版本-->
@@ -30,6 +31,14 @@
             <url>http://maven.aliyun.com/nexus/content/groups/public</url>
         </repository>
     </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.34</version>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
