@@ -18,4 +18,8 @@ public class Access {
         this.domain = domain;
         this.traffic = traffic;
     }
+
+    public Access() {
+
+    }
 }
